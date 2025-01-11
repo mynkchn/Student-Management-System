@@ -9,6 +9,14 @@
 *.md text
 *.txt text
 
+# Specify HTML files to be recognized as HTML
+*.html linguist-language=HTML
+*.js linguist-language=JavaScript
+*.py linguist-language=Python(Django)
+*.css linguist-language=CSS
+
+
+
 # Binary files
 *.jpg binary
 *.jpeg binary
