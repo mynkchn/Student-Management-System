@@ -10,7 +10,7 @@
 *.txt text
 
 # Specify HTML files to be recognized as HTML
-*.html linguist-language=HTML
+*.html linguist-language=Django HTML 
 *.js linguist-language=JavaScript
 *.py linguist-language=Python(Django)
 *.css linguist-language=CSS
@@ -29,6 +29,4 @@
 *.gz binary
 *.sqlite3 binary
 
-# Merge settings for specific file types
-*.py merge=union
-*.html merge=union
+
