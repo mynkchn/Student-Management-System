@@ -1,0 +1,26 @@
+# Set default behavior to automatically normalize line endings
+* text=auto
+
+# Explicitly declare text files
+*.py text
+*.html text
+*.css text
+*.js text
+*.md text
+*.txt text
+
+# Binary files
+*.jpg binary
+*.jpeg binary
+*.png binary
+*.gif binary
+*.ico binary
+*.svg binary
+*.zip binary
+*.tar binary
+*.gz binary
+*.sqlite3 binary
+
+# Merge settings for specific file types
+*.py merge=union
+*.html merge=union
