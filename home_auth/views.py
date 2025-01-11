@@ -28,8 +28,6 @@ def signup_view(request):
         # Assign the appropriate role
         if role == 'student':
             user.is_student = True
-        elif role == 'teacher':
-            user.is_teacher = True
         elif role == 'admin':
             user.is_admin = True
 
@@ -53,8 +51,6 @@ def login_view(request):
             # Redirect user based on their role
             if user.is_admin:
                 return redirect('admin_dashboard')
-            elif user.is_teacher:
-                return redirect('teacher_dashboard')
             elif user.is_student:
                 return redirect('dashboard')
             else:
