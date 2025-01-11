@@ -10,7 +10,7 @@
 *.txt text
 
 # Specify HTML files to be recognized as HTML
-*.html linguist-language=Django HTML 
+*.html linguist-language=Django
 *.js linguist-language=JavaScript
 *.py linguist-language=Python(Django)
 *.css linguist-language=CSS
