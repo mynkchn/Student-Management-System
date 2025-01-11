@@ -10,6 +10,7 @@
 
 # Ignore HTML files in language statistics
 *.html linguist-generated=true
+*.css linguist-generated=true
 
 # Exclude vendor libraries
 vendor/* linguist-vendored
