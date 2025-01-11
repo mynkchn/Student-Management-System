@@ -1,32 +1,14 @@
-# Set default behavior to automatically normalize line endings
-* text=auto
+# Exclude static assets
+static/* linguist-generated=true
+*.css linguist-generated=true
+*.js linguist-generated=true
+*.min.js linguist-generated=true
 
-# Explicitly declare text files
-*.py text
-*.html text
-*.css text
-*.js text
-*.md text
-*.txt text
+# Exclude vendor libraries
+vendor/* linguist-vendored
 
-# Specify HTML files to be recognized as HTML
-*.html linguist-language=Python,HTML
-*.js linguist-language=JavaScript
-*.py linguist-language=Python(Django)
-*.css linguist-language=CSS,BootStrap
+# Exclude Django admin templates
+django/contrib/admin/templates/* linguist-vendored
 
-
-
-# Binary files
-*.jpg binary
-*.jpeg binary
-*.png binary
-*.gif binary
-*.ico binary
-*.svg binary
-*.zip binary
-*.tar binary
-*.gz binary
-*.sqlite3 binary
-
-
+# Force Python as the primary language
+*.py linguist-language=Python
