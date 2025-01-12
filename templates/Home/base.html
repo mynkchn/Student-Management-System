@@ -84,12 +84,14 @@
                            <img src="{% static "assets/img/profiles/avatar-01.jpg" %}" alt="User Image" class="avatar-img rounded-circle">
                         </div>
                         <div class="user-text">
-                           <h6>{{user.username}}</h6>
+                           {% if request.user.is_authenticated %}
+                           <h6>{{request.user.username}}</h6>
+                           {% else %}
                            <p class="text-muted mb-0">Administrator</p>
+                           {% endif %}
                         </div>
                      </div>
-                     <a class="dropdown-item" href="profile.html">My Profile</a>
-                     <a class="dropdown-item" href="inbox.html">Inbox</a>
+                  
                      <a class="dropdown-item" href="{% url "logout" %}">Logout</a>
                   </div>
                </li>
@@ -105,7 +107,7 @@
                      <li class="submenu active">
                         <a href="#"><i class="fas fa-user-graduate"></i> <span> Dashboard</span> <span class="menu-arrow"></span></a>
                         <ul>
-                           <li><a href='/admin/'class="active">Admin Dashboard</a></li>
+                           <li><a href='/admin/' class="active" >Admin Dashboard</a></li>
                           
                            <li><a href={% url "student_list" %}>Student Dashboard</a></li>
                         </ul>

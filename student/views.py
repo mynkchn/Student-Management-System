@@ -119,7 +119,7 @@ def edit_student(request,slug):
         return redirect('student_list')
      return render(request,'students/edit-student.html',{
             'student':student,
-            'parent':parent
+            'parent':parent,
         })
 
 def view_student(request, slug):

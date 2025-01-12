@@ -37,7 +37,6 @@ def signup_view(request):
         return redirect('index')  # Redirect to the index or home page
     return render(request, 'authentication/register.html')  # Render signup template
 
-
 def login_view(request):
     if request.method == 'POST':
         email = request.POST['email']
